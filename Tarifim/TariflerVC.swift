@@ -54,6 +54,8 @@ class TariflerVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
+    
+    
     func getDataFromFirestore(){
         let firestoreDatabase = Firestore.firestore()
         firestoreDatabase.collection("Tarifler").order(by: "date",descending: true).addSnapshotListener { snapshot, error in
