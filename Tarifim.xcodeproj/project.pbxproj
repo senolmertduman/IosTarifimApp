@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0F07962A260DE90084E4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F07952A260DE90084E4FC /* AppDelegate.swift */; };
+		BF0F07982A260DE90084E4FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F07972A260DE90084E4FC /* SceneDelegate.swift */; };
+		BF0F079A2A260DE90084E4FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F07992A260DE90084E4FC /* LoginVC.swift */; };
+		BF0F079D2A260DE90084E4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0F079B2A260DE90084E4FC /* Main.storyboard */; };
+		BF0F079F2A260DE90084E4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0F079E2A260DE90084E4FC /* Assets.xcassets */; };
+		BF0F07A22A260DE90084E4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0F07A02A260DE90084E4FC /* LaunchScreen.storyboard */; };
+		BF1415812A2616CD005F0C40 /* TariflerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1415802A2616CD005F0C40 /* TariflerVC.swift */; };
+		BF1415832A2616E4005F0C40 /* EkleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1415822A2616E4005F0C40 /* EkleVC.swift */; };
+		BF1415852A261701005F0C40 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1415842A261701005F0C40 /* SettingsVC.swift */; };
+		BF4C343B2A260EBB0091709B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF4C343A2A260EBA0091709B /* GoogleService-Info.plist */; };
+		BF6D0EA52A2635B100542072 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D0EA42A2635B000542072 /* FeedCell.swift */; };
+		BF7053122A2645A400F632A9 /* MealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7053112A2645A400F632A9 /* MealVC.swift */; };
+		BF7053142A2648B900F632A9 /* placeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7053132A2648B900F632A9 /* placeModel.swift */; };
+		EABB4BAA70B7AF153A060AFD /* Pods_Tarifim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BEDE2E1714B390B6B98C0A /* Pods_Tarifim.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C509A22E3779BA2C0D3046 /* Pods-Tarifim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tarifim.release.xcconfig"; path = "Target Support Files/Pods-Tarifim/Pods-Tarifim.release.xcconfig"; sourceTree = "<group>"; };
+		46BEDE2E1714B390B6B98C0A /* Pods_Tarifim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tarifim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8F714DA553A4A9373BF596 /* Pods-Tarifim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tarifim.debug.xcconfig"; path = "Target Support Files/Pods-Tarifim/Pods-Tarifim.debug.xcconfig"; sourceTree = "<group>"; };
+		BF0F07922A260DE90084E4FC /* Tarifim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarifim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0F07952A260DE90084E4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF0F07972A260DE90084E4FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF0F07992A260DE90084E4FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BF0F079C2A260DE90084E4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF0F079E2A260DE90084E4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF0F07A12A260DE90084E4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF0F07A32A260DE90084E4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1415802A2616CD005F0C40 /* TariflerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariflerVC.swift; sourceTree = "<group>"; };
+		BF1415822A2616E4005F0C40 /* EkleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkleVC.swift; sourceTree = "<group>"; };
+		BF1415842A261701005F0C40 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BF4C343A2A260EBA0091709B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF6D0EA42A2635B000542072 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		BF7053112A2645A400F632A9 /* MealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealVC.swift; sourceTree = "<group>"; };
+		BF7053132A2648B900F632A9 /* placeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0F078F2A260DE90084E4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABB4BAA70B7AF153A060AFD /* Pods_Tarifim.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3385AD0A1726C94CDC60C34D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F8F714DA553A4A9373BF596 /* Pods-Tarifim.debug.xcconfig */,
+				28C509A22E3779BA2C0D3046 /* Pods-Tarifim.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55D5DC0C5AFE5DB204332551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46BEDE2E1714B390B6B98C0A /* Pods_Tarifim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0F07892A260DE90084E4FC = {
+			isa = PBXGroup;
+			children = (
+				BF0F07942A260DE90084E4FC /* Tarifim */,
+				BF0F07932A260DE90084E4FC /* Products */,
+				3385AD0A1726C94CDC60C34D /* Pods */,
+				55D5DC0C5AFE5DB204332551 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0F07932A260DE90084E4FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F07922A260DE90084E4FC /* Tarifim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0F07942A260DE90084E4FC /* Tarifim */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F07952A260DE90084E4FC /* AppDelegate.swift */,
+				BF0F07972A260DE90084E4FC /* SceneDelegate.swift */,
+				BF0F07992A260DE90084E4FC /* LoginVC.swift */,
+				BF1415802A2616CD005F0C40 /* TariflerVC.swift */,
+				BF7053112A2645A400F632A9 /* MealVC.swift */,
+				BF6D0EA42A2635B000542072 /* FeedCell.swift */,
+				BF1415822A2616E4005F0C40 /* EkleVC.swift */,
+				BF1415842A261701005F0C40 /* SettingsVC.swift */,
+				BF0F079B2A260DE90084E4FC /* Main.storyboard */,
+				BF0F079E2A260DE90084E4FC /* Assets.xcassets */,
+				BF0F07A02A260DE90084E4FC /* LaunchScreen.storyboard */,
+				BF0F07A32A260DE90084E4FC /* Info.plist */,
+				BF4C343A2A260EBA0091709B /* GoogleService-Info.plist */,
+				BF7053132A2648B900F632A9 /* placeModel.swift */,
+			);
+			path = Tarifim;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF0F07912A260DE90084E4FC /* Tarifim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0F07A62A260DE90084E4FC /* Build configuration list for PBXNativeTarget "Tarifim" */;
+			buildPhases = (
+				DD74E282C1790336F939B8BF /* [CP] Check Pods Manifest.lock */,
+				BF0F078E2A260DE90084E4FC /* Sources */,
+				BF0F078F2A260DE90084E4FC /* Frameworks */,
+				BF0F07902A260DE90084E4FC /* Resources */,
+				DE12496E1043D2AF3FB1062E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tarifim;
+			productName = Tarifim;
+			productReference = BF0F07922A260DE90084E4FC /* Tarifim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0F078A2A260DE90084E4FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BF0F07912A260DE90084E4FC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = BF0F078D2A260DE90084E4FC /* Build configuration list for PBXProject "Tarifim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0F07892A260DE90084E4FC;
+			productRefGroup = BF0F07932A260DE90084E4FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0F07912A260DE90084E4FC /* Tarifim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0F07902A260DE90084E4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F07A22A260DE90084E4FC /* LaunchScreen.storyboard in Resources */,
+				BF4C343B2A260EBB0091709B /* GoogleService-Info.plist in Resources */,
+				BF0F079F2A260DE90084E4FC /* Assets.xcassets in Resources */,
+				BF0F079D2A260DE90084E4FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD74E282C1790336F939B8BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tarifim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE12496E1043D2AF3FB1062E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tarifim/Pods-Tarifim-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tarifim/Pods-Tarifim-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tarifim/Pods-Tarifim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0F078E2A260DE90084E4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7053142A2648B900F632A9 /* placeModel.swift in Sources */,
+				BF6D0EA52A2635B100542072 /* FeedCell.swift in Sources */,
+				BF1415832A2616E4005F0C40 /* EkleVC.swift in Sources */,
+				BF0F079A2A260DE90084E4FC /* LoginVC.swift in Sources */,
+				BF1415812A2616CD005F0C40 /* TariflerVC.swift in Sources */,
+				BF0F07962A260DE90084E4FC /* AppDelegate.swift in Sources */,
+				BF0F07982A260DE90084E4FC /* SceneDelegate.swift in Sources */,
+				BF1415852A261701005F0C40 /* SettingsVC.swift in Sources */,
+				BF7053122A2645A400F632A9 /* MealVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF0F079B2A260DE90084E4FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F079C2A260DE90084E4FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF0F07A02A260DE90084E4FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F07A12A260DE90084E4FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF0F07A42A260DE90084E4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF0F07A52A260DE90084E4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0F07A72A260DE90084E4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8F714DA553A4A9373BF596 /* Pods-Tarifim.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNGVCU7BY3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tarifim/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smd.Tarifim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF0F07A82A260DE90084E4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C509A22E3779BA2C0D3046 /* Pods-Tarifim.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNGVCU7BY3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tarifim/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smd.Tarifim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0F078D2A260DE90084E4FC /* Build configuration list for PBXProject "Tarifim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F07A42A260DE90084E4FC /* Debug */,
+				BF0F07A52A260DE90084E4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0F07A62A260DE90084E4FC /* Build configuration list for PBXNativeTarget "Tarifim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F07A72A260DE90084E4FC /* Debug */,
+				BF0F07A82A260DE90084E4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0F078A2A260DE90084E4FC /* Project object */;
+}
