@@ -1,10 +1,3 @@
-//
-//  EkleVC.swift
-//  Tarifim
-//
-//  Created by Şenol Mert Duman on 30.05.2023.
-//
-
 import UIKit
 import Firebase
 
@@ -13,15 +6,16 @@ class EkleVC: UIViewController,UIImagePickerControllerDelegate,UINavigationContr
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tarifText: UITextView!
     @IBOutlet weak var mealNameText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         imageView.addGestureRecognizer(gestureRecognizer)
         
-
-    
     }
+// to choose image
     @objc func chooseImage(){
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
@@ -33,7 +27,7 @@ class EkleVC: UIViewController,UIImagePickerControllerDelegate,UINavigationContr
         imageView.image = info[.originalImage] as? UIImage
         self.dismiss(animated: true)
     }
-    
+// to push data to Firebase
     @IBAction func saveButtonClicked(_ sender: Any) {
         let storage = Storage.storage()
         let storageReference = storage.reference()
@@ -48,7 +42,8 @@ class EkleVC: UIViewController,UIImagePickerControllerDelegate,UINavigationContr
                     imageReference.downloadURL { url, error in
                         if error == nil{
                             let imageUrl = url?.absoluteString
-                            // database
+                            
+                            // Database
                             let firestoreDatabase = Firestore.firestore()
                             var firestoreReference : DocumentReference? = nil
                             let mealPosts = ["mealName":self.mealNameText.text!,"mealRecipe":self.tarifText.text!,"mealImageUrl":imageUrl!,"date":FieldValue.serverTimestamp()] as [String : Any]
@@ -56,17 +51,9 @@ class EkleVC: UIViewController,UIImagePickerControllerDelegate,UINavigationContr
                                 if error != nil{
                                     print("error")
                                 }else{
-                                    /*
-                                     tab barda yeni bir sey eklendigini belirlemek icin etiket ekledik. Cok gerekli degil o yuzden sildim.
-                                    if let tabBarItems = self.tabBarController?.tabBar.items{
-                                        let tabBar = tabBarItems[0]
-                                        tabBar.badgeValue = "New"
-                                        tabBar.badgeColor = UIColor.red
-                                    } */
                                     self.imageView.image = UIImage(named: "select")
                                     self.mealNameText.text = ""
                                     self.tarifText.text = ""
-                                    //self.performSegue(withIdentifier: "toTariflerVC", sender: nil)
                                     self.tabBarController?.selectedIndex = 0
                                 }
                             })

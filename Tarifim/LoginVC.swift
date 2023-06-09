@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Tarifim
-//
-//  Created by Şenol Mert Duman on 30.05.2023.
-//
-
 import UIKit
 import Firebase
 
@@ -13,10 +6,10 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        passwordText.isSecureTextEntry = true // sifreyi gizleme ozelligi
+        passwordText.isSecureTextEntry = true //to hide password
         
     }
-    
+// Sign in
     @IBAction func signInClicked(_ sender: Any) {
         if usernameText.text != "" && passwordText.text != ""{
             Auth.auth().signIn(withEmail: usernameText.text!, password: passwordText.text!) { authData, error in
@@ -30,7 +23,7 @@ class LoginVC: UIViewController {
             self.makeAlert(title: "ERROR", message: "Username/password?")
         }
     }
-    
+// Sign up
     @IBAction func signUpClicked(_ sender: Any) {
         if usernameText.text != "" && passwordText.text != ""{
             Auth.auth().createUser(withEmail: usernameText.text!, password: passwordText.text!) { authData, error in
@@ -44,6 +37,7 @@ class LoginVC: UIViewController {
             self.makeAlert(title: "ERROR", message: "Username/password?")
         }
     }
+// Make alert function
     func makeAlert(title: String,message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)

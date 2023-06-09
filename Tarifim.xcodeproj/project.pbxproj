@@ -102,12 +102,12 @@
 				BF6D0EA42A2635B000542072 /* FeedCell.swift */,
 				BF1415822A2616E4005F0C40 /* EkleVC.swift */,
 				BF1415842A261701005F0C40 /* SettingsVC.swift */,
+				BF7053132A2648B900F632A9 /* placeModel.swift */,
 				BF0F079B2A260DE90084E4FC /* Main.storyboard */,
 				BF0F079E2A260DE90084E4FC /* Assets.xcassets */,
 				BF0F07A02A260DE90084E4FC /* LaunchScreen.storyboard */,
 				BF0F07A32A260DE90084E4FC /* Info.plist */,
 				BF4C343A2A260EBA0091709B /* GoogleService-Info.plist */,
-				BF7053132A2648B900F632A9 /* placeModel.swift */,
 			);
 			path = Tarifim;
 			sourceTree = "<group>";

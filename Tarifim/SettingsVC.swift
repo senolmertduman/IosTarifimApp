@@ -1,10 +1,3 @@
-//
-//  SettingsVC.swift
-//  Tarifim
-//
-//  Created by Şenol Mert Duman on 30.05.2023.
-//
-
 import UIKit
 import Firebase
 
@@ -13,20 +6,18 @@ class SettingsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
+// to log out
     @IBAction func logoutClicked(_ sender: Any) {
-        let alertC = UIAlertController(title: "Tarifim", message: "Çıkış yapmak istediğinize emin misiniz?", preferredStyle: UIAlertController.Style.actionSheet)
-        let hayirButton = UIAlertAction(title: "HAYIR", style: UIAlertAction.Style.cancel)
+        let alertC = UIAlertController(title: "Tarifim", message: "Are you sure you want to log out?", preferredStyle: UIAlertController.Style.actionSheet)
+        let hayirButton = UIAlertAction(title: "No", style: UIAlertAction.Style.cancel)
         alertC.addAction(hayirButton)
-        let evetButton = UIAlertAction(title: "EVET", style: UIAlertAction.Style.default){ action in
+        let evetButton = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default){ action in
             do {
                     try Auth.auth().signOut()
                     self.performSegue(withIdentifier: "toLoginVC", sender: nil)
                     } catch {
-                        self.makeAlert(title: "ERROR", message: "error")
+                        self.makeAlert(title: "Error", message: "Could not log out")
                     }
         }
         alertC.addAction(evetButton)
@@ -39,6 +30,4 @@ class SettingsVC: UIViewController {
         alert.addAction(okButton)
         self.present(alert, animated: true)
     }
-    
-    
 }

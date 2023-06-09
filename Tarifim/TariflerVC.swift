@@ -1,10 +1,3 @@
-//
-//  TariflerVC.swift
-//  Tarifim
-//
-//  Created by Şenol Mert Duman on 30.05.2023.
-//
-
 import UIKit
 import Firebase
 import SDWebImage
@@ -23,7 +16,6 @@ class TariflerVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         tableView.dataSource = self
         getDataFromFirestore()
 
-        // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.mealNameArray.count
@@ -40,14 +32,15 @@ class TariflerVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         PlaceModel.sharedInstance.mealImageUrl = mealImageUrlArray[indexPath.row]
         self.performSegue(withIdentifier: "toMealVC", sender: nil)
     }
+// Table view delete action
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "Sil") { (contextualAction, view, boolValue) in
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view, boolValue) in
             let firestoreDatabase = Firestore.firestore()
             firestoreDatabase.collection("Tarifler").document(self.mealDocumentIdArray[indexPath.row]).delete { error in
                 if error != nil {
-                    print(error?.localizedDescription ?? "error")
+                    self.makeAlert(title: "Error", message: error?.localizedDescription ?? "error")
                 }else{
-                    print("successfully removed")
+                    print("Successfully removed")
                 }
             }
             self.tableView.reloadData()
@@ -55,12 +48,12 @@ class TariflerVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
-    
+// to pull data from Firestore
     func getDataFromFirestore(){
         let firestoreDatabase = Firestore.firestore()
         firestoreDatabase.collection("Tarifler").order(by: "date",descending: true).addSnapshotListener { snapshot, error in
             if error != nil{
-                print("error")
+                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
             }else {
                 if snapshot?.isEmpty != true && snapshot != nil{
                     self.mealNameArray.removeAll(keepingCapacity: false)
@@ -85,6 +78,12 @@ class TariflerVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 }
             }
         }
+    }
+    func makeAlert(title: String,message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
     }
 
 }
